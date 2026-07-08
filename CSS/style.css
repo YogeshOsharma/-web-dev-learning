@@ -1,6 +1,22 @@
-h1{
-    background-color: aquamarine;
-}
-h2{
-    background-color: brown;
-}
+        h1{
+            color: green;
+        }
+
+        #first{
+            color: aqua;
+        }
+        #second{
+            color: pink;
+        }
+        p{
+            font-size: 22px;
+            color: gray;
+        }
+        .new
+        {
+            color: yellow;
+        }
+        .new,#first
+        {
+            color: chartreuse;
+        }
