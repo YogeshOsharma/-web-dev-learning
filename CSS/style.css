@@ -1,5 +1,10 @@
         h1{
-            color: green;
+            color: black;
+            background-color: aqua;
+            width: 120px;
+            border: solid ,black,5px;
+            padding: 20px 40px;
+            margin: 10px;
         }
 
         #first{
@@ -22,8 +27,20 @@
         }
         h3{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 50px;
+            font-size: 30px;
             font-style: italic;
-            font-weight: 100;
-        
+          font-weight: 100;
+          background-color: bisque;
+          width: 50%;
+          border: solid red 3px;
+          margin: 50px;
+        }
+        #box
+        {
+            background-color: rgb(188, 218, 180);
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: solid pink 5px;
+            padding: 20px 20px;
+            margin: 100px;
         }
