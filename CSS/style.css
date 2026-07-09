@@ -1,54 +1,45 @@
-        h1{
-            color: black;
-            background-color: aqua;
-            width: 120px;
-            border: solid ,black,5px;
-            padding: 20px 40px;
-            margin: 10px;
-        }
-
-        #first{
-            color: aqua;
-        }
-        #second{
-            color: pink;
-        }
-        p{
-            font-size: 22px;
-            color: gray;
-        }
-        .new
-        {
-            color: yellow;
-        }
-        .new,#first
-        {
-            color: chartreuse;
-        }
-        h3{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
-            font-style: italic;
-          font-weight: 100;
-          background-color: bisque;
-          width: 50%;
-          border: solid red 3px;
-          margin: 50px;
-        }
-        #box
-        {
-            background-color: rgb(188, 218, 180);
-            color: black;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            border: solid pink 5px;
-            padding: 20px 20px;
-            margin: 100px;
-            font-size: 30px;
-        }
-        .box{
+.box1{
+    display:block;
+    width:150px;
+    height:150px;
+    border:2px solid black;
+    margin:10px;
+    position: static;
+    background-color: aqua;
+}
+.box2{
     display:inline-block;
     width:150px;
     height:150px;
     border:2px solid black;
     margin:10px;
+    position: fixed;
+    background-color: aqua;
+}
+.box3{
+    display:block;
+    width:150px;
+    height:150px;
+    border:2px solid black;
+    margin:10px;
+    position: relative;
+    background-color: aqua;
+}
+.box4{
+    display:block;
+    width:150px;
+    height:150px;
+    border:2px solid black;
+    margin:10px;
+    position: absolute;
+    background-color: aqua;
+}
+.box5{
+    display:block;
+    width:150px;
+    height:150px;
+    border:2px solid black;
+    margin:10px;
+    position: sticky;
+    background-color: aqua;
 }
