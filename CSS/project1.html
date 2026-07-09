@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Flag</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #222;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .flag {
+            display: flex;
+            width: 540px;
+            height: 360px;
+            border: 3px solid #000;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+        }
+
+        .flag__bar {
+            flex: 1;
+        }
+
+        .flag__bar--red {
+            background-color: white;
+            border-radius: 50;
+            border: 3px solid #000;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 1.2rem;
+        }
+        #circle
+        {
+            height: 170px;
+            width: 170px;
+            background-color: red;
+            border-radius: 50%;
+            border: 3px solid #000;
+            position: relative;
+            left: 175px;
+            top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>JAPAN Flag</h1>
+        <div class="flag">
+            
+            <div class="flag__bar flag__bar--red">
+                <div id="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
