@@ -1,0 +1,207 @@
+:root {
+  color-scheme: light;
+  color: #151a33;
+  background: #f2f7ff;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top left, #7d9cff 0%, transparent 30%),
+              radial-gradient(circle at bottom right, #a1c8ff 0%, transparent 28%),
+              #eef4ff;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.page-shell {
+  width: min(100%, 1080px);
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 48px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(111, 133, 255, 0.16);
+  border-radius: 32px;
+  padding: 40px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px rgba(41, 77, 146, 0.12);
+}
+
+.hero-copy span {
+  display: inline-block;
+  color: #3f56ff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  margin-bottom: 16px;
+}
+
+.hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.4vw, 3.2rem);
+  line-height: 1.02;
+}
+
+.hero-copy p {
+  margin: 24px 0 0;
+  max-width: 420px;
+  color: #5b658d;
+  line-height: 1.75;
+  font-size: 1rem;
+}
+
+.login-card {
+  position: relative;
+  padding: 32px 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(247,250,255,0.95) 100%);
+  border: 1px solid rgba(79, 104, 234, 0.12);
+  box-shadow: 0 24px 60px rgba(44, 70, 148, 0.12);
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #3b68ff, #7ca8ff);
+  color: white;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+}
+
+.login-form {
+  display: grid;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 18px 18px 14px;
+  border: 1px solid #d7e0f4;
+  border-radius: 18px;
+  background: #f7f9ff;
+  font-size: 1rem;
+  color: #151a33;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #6379ff;
+  box-shadow: 0 0 0 6px rgba(99, 121, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.input-group label {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 6px;
+  background: transparent;
+  color: #7f8bb2;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: transform 0.22s ease, top 0.22s ease, font-size 0.22s ease, color 0.22s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: 8px;
+  transform: none;
+  font-size: 0.78rem;
+  color: #3d50c6;
+}
+
+button {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #3b68ff, #6f97ff);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(59, 104, 255, 0.22);
+}
+
+.help-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  gap: 12px;
+  color: #5e6b92;
+  font-size: 0.95rem;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.checkbox-label input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c4cee7;
+  border-radius: 4px;
+  accent-color: #5363ff;
+}
+
+.help-row a {
+  color: #3b68ff;
+  text-decoration: none;
+}
+
+.help-row a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 840px) {
+  .hero-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 20px;
+  }
+
+  .hero-panel {
+    padding: 28px;
+    gap: 28px;
+  }
+}
