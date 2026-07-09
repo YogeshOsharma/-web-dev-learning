@@ -1,45 +1,21 @@
-.box1{
-    display:block;
-    width:150px;
-    height:150px;
-    border:2px solid black;
-    margin:10px;
-    position: static;
-    background-color: aqua;
+.container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    height:400px;
 }
-.box2{
-    display:inline-block;
-    width:150px;
-    height:150px;
-    border:2px solid black;
-    margin:10px;
-    position: fixed;
-    background-color: aqua;
-}
-.box3{
-    display:block;
-    width:150px;
-    height:150px;
-    border:2px solid black;
-    margin:10px;
-    position: relative;
-    background-color: aqua;
-}
-.box4{
-    display:block;
-    width:150px;
-    height:150px;
-    border:2px solid black;
-    margin:10px;
-    position: absolute;
-    background-color: aqua;
-}
-.box5{
-    display:block;
-    width:150px;
-    height:150px;
-    border:2px solid black;
-    margin:10px;
-    position: sticky;
-    background-color: aqua;
+
+.box{
+
+    width:100px;
+
+    height:100px;
+
+    background-color:orange;
 }
