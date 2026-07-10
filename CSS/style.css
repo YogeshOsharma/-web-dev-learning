@@ -1,21 +1,17 @@
 .container{
+    display:grid;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
 
     gap:20px;
-
-    height:400px;
 }
-
-.box{
-
-    width:100px;
-
-    height:100px;
-
-    background-color:yellowgreen;
+.card
+{
+    background-color: palevioletred;
+    width: 25%;
+    border-radius: 20%;
+    border: 2px solid black;
+    display: grid;
+    justify-items: center;
 }
