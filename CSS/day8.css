@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(169, 195, 208);
+    display: block;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+}
+
+.loader
+{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(32, 130, 23);
+    border-radius: 50%;
+    animation:pulse /*bounce*/ 1s infinite;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+
+}
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes bounce{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-100px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
