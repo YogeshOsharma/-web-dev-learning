@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+    overflow:hidden;
+}
+
+.solar-system{
+    position:relative;
+    width:500px;
+    height:500px;
+}
+
+.sun{
+    position:absolute;
+    width:80px;
+    height:80px;
+    background:gold;
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    box-shadow:0 0 50px gold;
+}
+
+.earth-orbit{
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:earthRotate 10s linear infinite;
+}
+
+.earth{
+    position:absolute;
+
+    width:35px;
+    height:35px;
+
+    background:dodgerblue;
+    border-radius:50%;
+
+    top:-17px;
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+
+.moon-orbit{
+    position:absolute;
+
+    width:80px;
+    height:80px;
+
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:moonRotate 2s linear infinite;
+}
+
+.moon{
+    position:absolute;
+
+    width:12px;
+    height:12px;
+
+    background:white;
+    border-radius:50%;
+
+    top:-6px;
+    left:50%;
+
+    transform:translateX(-50%);
+}
+
+
+@keyframes earthRotate{
+    from{
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
+
+@keyframes moonRotate{
+    from{
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
+
+.mars-orbit{
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:marsRotate 18s linear infinite;
+}
+
+
+.mars{
+    position:absolute;
+
+    width:38px;
+    height:38px;
+
+    background:orangered;
+    border-radius:50%;
+
+    top:-14px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:0 0 10px orangered;
+}
+@keyframes marsRotate{
+    from{
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
+.jupiter-orbit{
+    position:absolute;
+
+    width:620px;
+    height:620px;
+
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:50%;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    animation:jupiterRotate 28s linear infinite;
+}
+
+
+.jupiter{
+    position:absolute;
+
+    width:50px;
+    height:50px;
+
+    background:rgb(207, 129, 101);
+    border-radius:50%;
+
+    top:-20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:0 0 10px orangered;
+}
+@keyframes jupiterRotate{
+    from{
+        transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translate(-50%,-50%)
+        rotate(360deg);
+    }
+}
